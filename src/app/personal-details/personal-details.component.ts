@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class PersonalDetailsComponent implements OnInit {
   API = 'https://verardimeapi.appspot.com';
-  personalDetails: any = [];
+  personalDetails: any = [['']];
 
   constructor(public restApi: RestApiService, route:ActivatedRoute) {
     route.params.subscribe(val => {
