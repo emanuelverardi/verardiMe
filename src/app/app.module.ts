@@ -35,7 +35,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     MainPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule
   ],
