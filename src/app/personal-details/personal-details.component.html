@@ -1,0 +1,55 @@
+<section class="section section-no-border bg-color-light m-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <div class="custom-box-details bg-color-light custom-box-shadow-1 col-lg-6 ml-5 mb-5 mb-lg-4 float-right clearfix">
+          <h4>Personal Details</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="custom-list-style-1 p-0 mb-0">
+                <li>
+                  <span class="text-color-dark">Birthday:</span>
+                  <span class="custom-text-color-2">1981April27</span>
+                </li>
+                <li>
+                  <span class="text-color-dark">Marital:</span>
+                  <span class="custom-text-color-2">Married</span>
+                </li>
+                <li>
+                  <span class="text-color-dark">Nationality:</span>
+                  <span class="custom-text-color-2">Italy/Brazil</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="custom-list-style-1 p-0 mb-0">
+                <li>
+                  <span class="text-color-dark">Skype:</span>
+                  <span class="custom-text-color-2"><a class="custom-text-color-2" href="skype:emanuelverardi?chat">emanuelverardi</a></span>
+                </li>
+                <li>
+                  <span class="text-color-dark">PHONE:</span>
+                  <span class="custom-text-color-2"><a class="custom-text-color-2" href="#">ask me</a></span>
+                </li>
+                <li>
+                  <span class="text-color-dark">EMAIL:</span>
+                  <span class="custom-text-color-2"><a class="custom-text-color-2" href="mailto:emanuelverardi@gmail.com">emanuelverardi@gmail</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">About Me</h2>
+        <div [innerHTML]="personalDetails[0].message"></div>
+        <div class="about-me-more" id="aboutMeMore">
+          <div [innerHTML]="personalDetails[0].more"></div>
+        </div>
+
+        <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1" href="#">View More</a>
+
+      </div>
+    </div>
+  </div>
+</section>
