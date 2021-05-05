@@ -13,7 +13,8 @@ import { retry, catchError } from 'rxjs/operators';
 export class RestApiService {
 
   // Define API
-  apiURL = 'https://verardimeapi.appspot.com';
+  // apiURL = 'https://verardimeapi.appspot.com';
+  apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
