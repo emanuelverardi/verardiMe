@@ -5,6 +5,7 @@ import { Experience } from '../shared/experience';
 import { PersonalDetails } from '../shared/personal-details';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,7 @@ import { retry, catchError } from 'rxjs/operators';
 export class RestApiService {
 
   // Define API
-  // apiURL = 'https://verardimeapi.appspot.com';
-  apiURL = 'http://localhost:3000';
+  apiURL = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 
